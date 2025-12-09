@@ -308,6 +308,20 @@ footer .border-secondary {
   height: 600px;
 }
 
+@media (max-width: 768px) {
+  .img-h-sm {
+    height: 200px;
+  }
+
+  .img-h-md {
+    height: 300px;
+  }
+
+  .img-h-lg {
+    height: 400px;
+  }
+}
+
 .portfolio-item:hover img {
   transform: scale(1.4);
 }
