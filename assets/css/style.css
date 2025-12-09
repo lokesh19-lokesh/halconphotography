@@ -142,6 +142,31 @@ h6 {
   z-index: 1;
 }
 
+/* Section Video Background */
+.video-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.section-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  /* Subtle background */
+}
+
+/* Ensure content is above video */
+.section-padding.position-relative .container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -256,6 +281,8 @@ footer .border-secondary {
   }
 }
 
+
+
 .object-fit-cover {
   object-fit: cover;
 }
@@ -269,7 +296,6 @@ footer .border-secondary {
 .portfolio-item:hover img {
   transform: scale(1.03);
   filter: grayscale(0%);
-  /* Color on hover */
 }
 
 .portfolio-overlay {
@@ -291,7 +317,6 @@ footer .border-secondary {
 .portfolio-overlay h5 {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 300;
 }
 
 /* Page Headers */
