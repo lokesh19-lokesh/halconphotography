@@ -380,8 +380,37 @@ footer .border-secondary {
 
 /* Page Headers */
 .page-header {
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0 60px;
+  /* Reduced specific for mobile */
+  text-align: center;
+  color: #fff;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+@media (min-width: 992px) {
+  .page-header {
+    padding: 250px 0 150px;
+  }
+}
+
+.page-header-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/aboutus.png');
+}
+
+.page-header-portfolio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/portfolio.png');
+}
+
+.page-header-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/services.png');
+}
+
+.page-header-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/contact.png');
 }
 
 /* Lightbox Modal Styles */
@@ -428,6 +457,50 @@ footer .border-secondary {
   z-index: 2001;
 }
 
-.lightbox-close:hover {
-  color: #ccc;
+
+/* Services Page Styles */
+.service-card {
+  border: 2px solid #ddd;
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  border-color: #d4af37;
+  /* Fallback for accent-gold if undefined, assuming gold */
+  border-color: var(--accent-gold);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.price-tag {
+  font-size: 2.5rem;
+  color: var(--primary-black);
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.hover-shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Page Syles */
+.filter-btn {
+  border: 1px solid var(--primary-black);
+  color: var(--primary-black);
+  background: transparent;
+  padding: 8px 16px;
+  margin: 0 5px 10px;
+  transition: all 0.3s;
+  font-family: var(--font-heading);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--primary-black);
+  color: #fff;
 }
