@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halcon Photography | South Indian Wedding Photography</title>
+  <link rel="icon" type="image/png" href="assets/image/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/image/logo.png" alt="Halcon Photography">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Video Background) -->
+  <header id="home" class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+      <source src="assets/image/hero.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button id="audioToggle" class="btn btn-light position-absolute bottom-0 end-0 m-4 rounded-circle shadow"
+      style="z-index: 10; width: 50px; height: 50px;">
+      <i class="fas fa-volume-mute" id="audioIcon"></i>
+    </button>
+  </header>
+
+  <!-- Hero Content (Moved Below) -->
+  <section class="text-center section-padding pb-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 animate-up">
+          <h1 class="display-4 fw-bold mb-3">Stories of Love & Tradition</h1>
+          <p class="lead mb-4">Capturing the soul of South Indian Weddings</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="portfolio.html" class="btn btn-primary-custom">View Our Films</a>
+            <a href="contact.html" class="btn btn-outline-custom">Book Your Date</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="section-padding text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="section-title">Welcome to Halcon Photography</h2>
+          <p class="lead mt-4 mb-4 text-muted">
+            We don't just take pictures; we craft visual love stories. Specializing in the vibrant, emotional, and
+            timeless beauty of South Indian weddings, we are there to capture every Mangalasnanam splash and every
+            Muhurtham glance.
+          </p>
+          <p class="mb-5">
+            With a blend of traditional elegance and modern cinematic flair, Halcon Photography ensures your big day is
+            remembered exactly how it felt—magical.
+          </p>
+          <a href="about.html" class="btn btn-outline-custom">Read Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Portfolio -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Captured Moments</h2>
+      <p class="text-center mb-5 text-muted">A glimpse into our favorite wedding stories</p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="portfolio-item position-relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1621621667797-e06afc217fb0?q=80&w=600&auto=format&fit=crop"
+              class="img-fluid w-100 shadow-sm rounded" alt="Tradition" loading="lazy">
+            <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+              <h5 class="text-white">Tradition</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item position-relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1595521914992-0058b86e04d4?q=80&w=600&auto=format&fit=crop"
+              class="img-fluid w-100 shadow-sm rounded" alt="Love" loading="lazy">
+            <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+              <h5 class="text-white">Love</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item position-relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1512141633501-8eb922bc9c3d?q=80&w=600&auto=format&fit=crop"
+              class="img-fluid w-100 shadow-sm rounded" alt="Bride" loading="lazy">
+            <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+              <h5 class="text-white">Grace</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item position-relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1623190823483-329437b0191c?q=80&w=600&auto=format&fit=crop"
+              class="img-fluid w-100 shadow-sm rounded" alt="Celebration" loading="lazy">
+            <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+              <h5 class="text-white">Celebration</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item position-relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1610174830882-62bda50552b9?q=80&w=600&auto=format&fit=crop"
+              class="img-fluid w-100 shadow-sm rounded" alt="Details" loading="lazy">
+            <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+              <h5 class="text-white">Details</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-item position-relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1643900350495-21d45906a2ee?q=80&w=600&auto=format&fit=crop"
+              class="img-fluid w-100 shadow-sm rounded" alt="Groom" loading="lazy">
+            <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+              <h5 class="text-white">Legacy</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="portfolio.html" class="btn btn-primary-custom">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h3 class="mb-3">Halcon Photography</h3>
+          <p class="text-white-50">Capturing the timeless beauty of South Indian weddings with passion and precision.
+          </p>
+          <div class="social-icons mt-3">
+            <a href="#" class="me-3 fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="me-3 fs-5"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="fs-5"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4 class="mb-3 h5">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Home</a></li>
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4 class="mb-3 h5">Contact Us</h4>
+          <ul class="list-unstyled text-white-50">
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-white"></i> Hyderabad, Telangana, India</li>
+            <li class="mb-2"><i class="fas fa-phone me-2 text-white"></i> +91 98765 43210</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2 text-white"></i> info@halconphotography.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4">
+      <div class="row">
+        <div class="col-md-12 text-center text-white-50">
+          <p class="mb-0">&copy; 2024 Halcon Photography. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
