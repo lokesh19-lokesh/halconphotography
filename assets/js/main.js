@@ -76,5 +76,35 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
     scrollElements.forEach((el) => scrollObserver.observe(el));
+
+
+    // Lightbox Functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    if (lightbox && lightboxImg && closeBtn) {
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const img = this.querySelector('img');
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightbox.classList.add('active');
+                }
+            });
+        });
+
+        closeBtn.addEventListener('click', function () {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', function (e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+    }
 });
