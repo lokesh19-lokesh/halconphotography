@@ -298,20 +298,51 @@ footer .border-secondary {
   filter: grayscale(0%);
 }
 
+/* Portfolio Item Hover */
+.portfolio-item {
+  cursor: pointer;
+}
+
 .portfolio-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  /* Black tint */
+  background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s;
 }
 
 .portfolio-item:hover .portfolio-overlay {
   opacity: 1;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .portfolio-overlay h5 {
