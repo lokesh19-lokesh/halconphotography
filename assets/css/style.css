@@ -101,7 +101,7 @@ h6 {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--gray-light) !important;
+  color: #d52828 !important;
   font-weight: 700;
 }
 
