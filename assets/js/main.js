@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
             navbar.classList.add("shadow-sm");
-            navbar.style.backgroundColor = "rgba(255, 248, 231, 1)"; // Solid cream
+            navbar.style.backgroundColor = "rgba(0, 0, 0, 1)"; // Solid black
             navbar.style.paddingTop = "10px";
             navbar.style.paddingBottom = "10px";
         } else {
             navbar.classList.remove("shadow-sm");
-            navbar.style.backgroundColor = "rgba(255, 248, 231, 0.95)"; // Semi-transparent
+            navbar.style.backgroundColor = "rgba(0, 0, 0, 0.95)"; // Semi-transparent black
             navbar.style.paddingTop = "15px";
             navbar.style.paddingBottom = "15px";
         }
